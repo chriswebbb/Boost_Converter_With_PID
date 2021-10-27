@@ -1,6 +1,6 @@
 # Boost_Converter_With_PID
 
-![GitHub Logo](Screenshot_3.png)
+![GitHub Logo](Screenshot_4.png)
 
 <div id="top"></div>
 
