@@ -1,25 +1,20 @@
-/* embedded_boost.c 
- *
- *  Author: Steve Gunn & Klaus-Peter Zauner 
- * Licence: This work is licensed under the Creative Commons Attribution License. 
- *          View this license at http://creativecommons.org/about/licenses/
- *   Notes: 
- *          - Use with a terminal program
- * 
- *          - F_CPU must be defined to match the clock frequency
- *
- *          - Compile with the options to enable floating point
- *            numbers in printf(): 
- *               -Wl,-u,vfprintf -lprintf_flt -lm
- *
- *          - Pin assignment: 
- *            | Port | Pin | Use                         |
- *            |------+-----+-----------------------------|
- *            | A    | PA0 | Voltage at load             |
- *            | D    | PD0 | Host connection TX (orange) |
- *            | D    | PD1 | Host connection RX (yellow) |
- *            | D    | PD7 | PWM out to drive MOSFET     |
- */
+//   Notes: 
+//          - Use with a terminal program
+// 
+//          - F_CPU must be defined to match the clock frequency
+//
+//          - Compile with the options to enable floating point
+//            numbers in printf(): 
+//               -Wl,-u,vfprintf -lprintf_flt -lm
+//
+//          - Pin assignment: 
+//            | Port | Pin | Use                         |
+//            |------+-----+-----------------------------|
+//            | A    | PA0 | Voltage at load             |
+//            | D    | PD0 | Host connection TX (orange) |
+//            | D    | PD1 | Host connection RX (yellow) |
+//            | D    | PD7 | PWM out to drive MOSFET     |
+//
 /* avr-gcc -mmcu=atmega644p -DF_CPU=12000000 -Wall -Os -Wl,-u,vfprintf -lprintf_flt -lm boost.c -o boost.elf
  avr-objcopy -O ihex boost.elf boost.hex
  avrdude -c usbasp -p m644p -U flash:w:boost.hex */
