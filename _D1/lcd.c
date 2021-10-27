@@ -1,8 +1,3 @@
-/*  Author: Steve Gunn
- * Licence: This work is licensed under the Creative Commons Attribution License.
- *           View this license at http://creativecommons.org/about/licenses/
- */
- 
 #include "ili934x.h"
 #include "font.h"
 #include "lcd.h"
