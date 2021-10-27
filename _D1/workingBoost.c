@@ -1,9 +1,4 @@
-/* embedded_boost.c 
- *
- *  Author: Steve Gunn & Klaus-Peter Zauner 
- * Licence: This work is licensed under the Creative Commons Attribution License. 
- *          View this license at http://creativecommons.org/about/licenses/
- *   Notes: 
+/*   Notes: 
  *          - Use with a terminal program
  * 
  *          - F_CPU must be defined to match the clock frequency
